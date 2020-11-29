@@ -140,32 +140,47 @@ document.write("Decremento antes: "+(--numero2));
 
 document.write("<br><br>");
 
-document.write("Suma: "+(numero2+20));
+document.write("Suma: "+(numero2 + 20));
 
 
 document.write("<br><br>");
 
-document.write("Resta: "+(numero2-30));
+document.write("Resta: "+(numero2 - 30));
 
 
 document.write("<br><br>");
 
-document.write("Multiplicacion: "+(numero2*3));
+document.write("Multiplicacion: "+(numero2 * 3));
 
 
 document.write("<br><br>");
 
-document.write("Division: "+(numero2/2));
+document.write("Division: "+(numero2 / 2));
 
 
 document.write("<br><br>");
 
-document.write("Exponenciacion o potenciación: "+(numero2**2));
+document.write("Exponenciacion o potenciación: "+(numero2 ** 2));
 
 
 document.write("<br><br>");
 
-document.write("Porcentajes: "+(numero2%120));
+document.write("Porcentajes: "+(numero2 % 120));
+
+
+document.write("<br><br>");
+
+document.write("Resto o residuo: "+(numero2 & 2));
+
+
+document.write("<br><br>");
+
+document.write("Poner numero negativo: "+(-numero2));
+
+
+document.write("<br><br>");
+
+document.write("Poner numero positivo: "+(+numero2));
 
 
 
