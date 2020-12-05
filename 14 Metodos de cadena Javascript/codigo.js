@@ -61,7 +61,7 @@ Hay que tener en cuenta que esta va a mostrar la primer coincidencia que haya en
 si tenemos una cadena que dice varias veces (buenas) lo que pasara es que mostrara la posicion de la primera
 palabra que se encuentre en dicha cadena.
 
-lastIndexOF() -> Este metodo en vez de mostrar la posicion de la primera palabra que se este buscando lo que 
+lastIndexOf() -> Este metodo en vez de mostrar la posicion de la primera palabra que se este buscando lo que 
 hara es mostrar la posicion de la palabra que se este buscando pero la ultima palabra que hay en toda la cadena
 con esa coincidencia.
 
@@ -240,6 +240,117 @@ variable1 = true;
 resultado12 = '<hr>'+variable1.toString()+'<hr>';
 
 document.write(resultado12);
+
+
+
+
+
+
+
+
+
+
+
+
+//SEGUNDA PRACTICA CON METODS DE CADENA
+
+cadena = "Hola mundo desde ";
+resultado = cadena.concat("Colombia Medellin");
+
+document.write(resultado+'<hr>');
+
+cadena = "Buenos dias desde Rusia";
+cadena2 = "Buenos";
+resultado = cadena.startsWith(cadena2);
+
+document.write(resultado);
+
+cadena = "Todo lo relacionado con C##";
+cadena2 = "con C##";
+resultado = cadena.endsWith(cadena2);
+
+document.write('<hr>'+resultado);
+
+cadena = "Esto es una gran prueba de lo que puede hacer el includes() en javascrípt";
+cadena2 = " gran prueba de lo ";
+resultado = cadena.includes(cadena2);
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "Esta cadena da la posicion exacta en longitud en que se encuentra un comienzo de cadena";
+cadena2 = "longitud en que se encuentra";
+resultado = cadena.indexOf(cadena2);
+
+document.write(resultado+'<hr>');
+
+cadena = "Esta cadena da la posicion exacta en longitud en que se encuentra un comienzo de cadena";
+cadena2 = "cadena";
+resultado = cadena.lastIndexOf(cadena2);
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = " web y mi sueño es ser el mejor desarrollador web y fundar mi propia start-Up";
+cadena2 = "Me llamo Emanuel y soy desarrollador";
+
+resultado = cadena.padStart(113, cadena2);
+
+document.write(resultado+'<hr>');
+
+cadena = " web y mi sueño es ser el mejor desarrollador web y revolucionar todo, además de fundar mi propia start-Up";
+cadena2 = "Me llamo Emanuel y soy desarrollador";
+
+resultado = cadena2.padEnd(142, cadena);
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "Cadena repetida ";
+resultado = cadena.repeat(10);
+
+document.write(resultado+'<hr>');
+
+cadena = "Esta es una cadena convertida en un array y es separada a traves de espacio :D";
+resultado = cadena.split(" ");
+
+document.write('<hr>'+resultado[7]+'<hr>');
+
+cadena = "Esta cadena me puede ayudar a aprender mas sobre todo el desarrollo web";
+resultado = cadena.substring(28, 71);
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "LETRA MINUSCULA CONVERTIDA CON JAVASCRIPT";
+resultado = cadena.toLowerCase();
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "letra mayuscula convertida con javascrípt";
+resultado = cadena.toUpperCase();
+
+document.write('<hr>'+resultado+'<hr>');
+
+numero_String = 14823487203482904823482482348290;
+resultado = numero_String.toString();
+
+document.write('<hr>'+resultado+'<= convertido de numero a string <hr>');
+
+cadena = "                   EspaciosVaciosQuitadosAmbosLados              ";
+resultado = cadena.trim();
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "                   EspaciosVaciosQuitadosAlPrincipio              ";
+resultado = cadena.trimStart();
+
+document.write('<hr>'+resultado+'<hr>');
+
+cadena = "                   EspaciosVaciosQuitadosAlFinal              ";
+resultado = cadena.trimEnd();
+
+document.write('<hr>'+resultado+'<hr>');
+
+
+
+
 
 
 
