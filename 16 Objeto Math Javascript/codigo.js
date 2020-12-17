@@ -11,6 +11,11 @@ va dicho numero a sacar la raiz cubica ejemplo
 
 numero = Math.cbrt(27) -> Esto va a ser igual a 3 debido a que 3 x 3 x 3 = 27;
 
+Math.pow(Base, Potencia) -> Esta funciona para poder hacer potencia en numeros el primer parametro es el numero
+al que queremos elevar y el segundo parametro es la potencia a donde queremos elevar dicho numero ejemplo
+
+numero = Math.pow(3, 3) -> Esto va a ser igual a 27 porque 3 x 3 x 3 = 27
+
 Math.max() -> Esta funcionalidad sirve para comparar diferentes numeros y debolvera el numero mayor de toda esa
 cantidad de numeros seleccionados ejemplo.
 
