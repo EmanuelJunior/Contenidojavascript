@@ -52,7 +52,6 @@ Math.SQRT1_2 -> Lo que hace es sacar la raiz cuadrada de 1/2.
 Math.SQRT2 -> Saca la raiz cuadrada de 2.
 
 */
-
 let numero, resultado;
 
 /*MATH.SQRT()*/
