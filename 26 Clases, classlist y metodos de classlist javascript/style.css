@@ -1,0 +1,12 @@
+*{
+	font-family: arial;
+}
+
+.grande{
+	font-size: 150px;
+	color: red;
+	text-transform: uppercase;
+	text-shadow: 10px 10px 10px #ccc, 12px 12px 12px #999, 14px 14px 14px #888;
+	-webkit-text-stroke: 5px red;	
+	text-align: center;
+}
