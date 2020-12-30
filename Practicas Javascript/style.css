@@ -1,0 +1,8 @@
+body{
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+.nuevaClass{
+	text-shadow: 10px 10px 10px #999, 15px 15px 15px #888, 20px 20px 20px #777 !important;
+}
