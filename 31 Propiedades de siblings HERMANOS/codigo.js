@@ -1,10 +1,10 @@
 /*
 PROPIEDADES DE SIBLINGS (HERMANOS)
 
-elementoHermanano.nextElementSibling; -> Estas propiedad se utiliza para que devuelva
+elementoHermano.nextElementSibling; -> Estas propiedad se utiliza para que devuelva
 cual elemento hermano es el siguiente del elemento hermano que estamos investigando. 
 
-elementoHermnaano.previousElementSibling; -> Estas propiedad se utiliza para que devuelva
+elementoHermano.previousElementSibling; -> Estas propiedad se utiliza para que devuelva
 cual elemento hermano es el anterior del elemento hermano que estamos investigando.
 
 ejemplo
