@@ -52,11 +52,75 @@ window.confirm() --> comunmente confirm() -> Este abre una ventana que va a tene
 emergente aparecera un boton de aceptar y otro de cancelar dependiendo de si damos aceptar o cancelar nos devolvera un 
 valor boolean, true --> aceptar y false --> cancelar. 
 
+-----------------------
+
+window.screen; --> Screen es uno de los tantos objetos de window con los que trabajan con la pantalla del ordenador.
+window.screen de esta forma podemos acceder al objeto
+
+window.screen.availHeigth; --> Es la altura que puede tener la window(ventana) del browser(navegador) si esta maximizada
+incluidas las barras del browser(navegador) este esta denominada en pixeles.
+
+window.screen.availWidth; -->  Es la anchura que puede tener la window(ventana) del browser(navegador) si esta maximizada
+incluidas las barras del browser(navegador) este esta denominada en pixeles.
+
+window.screen.heigth; --> La diferencia con la propiedad anterior es que esta es basicamente el alto total de la pantalla en si
+en pixeles
+
+window.screen.width; --> La diferencia con la propiedad anterior es que esta es basicamente el ancho total de la pantalla en si
+en pixeles
+
+window.screenLeft --> Devuelve la distancia horizontal entre el borde izquierdo del navegador y el borde izquierdo de la
+pantalla de nuestro moniror.
+
+window.screenTop --> Devuelve la distancia vertical entre el borde superior del navegador y el borde superior de la pantalla
+de nuestor monitor.
+
+window.scrollX --> Devuelve la posicion exacta en donde se encuentra el navegar en manera horizontalmente
+osea ene el eje x.
+
+window.scrollY --> Devuelve la posicion exacta en donde se encuentra el navegador en manera vertical
+osea ene el eje y. 
+
+window.scroll(x, y) --> Este metodo de window no sirve para ver en que posicion esta el eje x o y, si no para modificar
+donde estara situado el eje x y el eje y, en pocas palabras con este podemos modificar en que posicion exacta debe 
+estar dicho scroll en en x and y, en nuestra pagina web.
+
+LOCATION
+
+window.location.href --> Devuelve el href (URL) de la pagina actual.
+
+window.location.hostname --> Devuelve el nombre de dominio del servidor web.
+
+window.location.pathname --> Devuelve la ruta y el nombre de archivo de la pagina actual.
+
+window.location.protocol --> Devuelve el protocolor web utilizado (http: o https:).
+
+window.location.assign() --> Carga una nueva url de la pagina dentro de los parentesis podemos
+agregar la url que queremos que cargue la pagina actual.
+
+window.location.reload() --> Esta tiene como funcionalidad actualizar la pagina actual.
+
 
 */
 
-let hacktheboxURL = "https://www.hackthebox.eu/";
 
-for(let i = 0; i <= 5; i++){
-	let ventana = window.open(hacktheboxURL);
-}
+let hacktheboxURL = "https://www.hackthebox.eu/";
+	// let ventana = window.open(hacktheboxURL);
+
+const screenLeft = window.screenLeft;
+const screenTop = window.screenTop;
+
+document.write(`Left: <b>${screenLeft}</b><hr> Top: <b>${screenTop}</b>`);
+
+console.info(screen);
+
+let scrolly = window.scrollY;
+let scrollx = window.scrollX;
+
+alert(`PosicionX: ${scrollx}            PosicionY: ${scrolly}`);
+
+// const href = window.location.href;
+// const hostname = window.location.hostname;
+// const pathname = window.location.pathname;
+// const protocol = window.location.protocol;
+// const assign = window.location.assign("?modificado=true");
