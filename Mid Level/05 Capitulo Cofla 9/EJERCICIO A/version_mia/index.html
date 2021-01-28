@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de usuario</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body{
+            background: #333;
+        }
+
+        input, button{
+            width: 90%;
+            display: block;
+            margin: 10px auto;
+            border-radius: 30px;
+            padding: 6px;
+            border: 3px solid darkred;
+            background: transparent;
+            color: #aaa;
+            outline: none;
+        }
+
+        input[type=submit], button{
+            width: 50%;
+            cursor: pointer;
+            transition: background 500ms;
+            text-transform: uppercase;
+        }
+
+        input[type=submit]:hover, button:hover{
+            background: darkred;
+        }
+
+        .oculto{
+            display: none;
+        }
+
+        .title{
+            color: darkred;
+            text-align: center;
+            font-weight: bold;
+            -webkit-text-stroke: .5px #aaa;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+        <h1 class="titulo title">Digite Materias</h1>
+        <h1 class="oculto tituloForm title">LLene el formulario</h1>
+
+    <form id="form" method="POST" action="http://localhost/prueba/prueba.php">
+        <input type="text" name="nombre" class="oculto" id="nombre" placeholder="nombre">
+        <input type="text" name="apellidos" class="oculto" id="apellidos" placeholder="apellidos">
+        <input type="text" name="email" class="oculto" id="email" placeholder="email">
+    </form>
+
+    <input id="numero" type="number" placeholder="numero materias">
+
+    <button id="button" onclick="numeroMaterias()">Mostrar</button>
+
+    <button class="oculto" id="submit" onclick="validar()">Validar</button>
+
+    <script src="codigo.js"></script>
+</body>
+</html>

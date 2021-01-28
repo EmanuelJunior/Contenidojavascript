@@ -1,6 +1,19 @@
 /*BUCLES*/
 
 /*
+COSAS A TENER EN CUENTA
+
+Tenemos que tener en cuenta algo y es que en while y for si en estos ciclos
+solo vamos a ejecutar un solo comando no necesitamos llaves de esta manera
+nos evitamos codigo y recursos, EJEMPLO:
+
+let numero = 0;
+
+while(numero <= 10) console.log("Este es el numero "+numero+" hecho con el condicional while"); 
+
+for(numero <= 10) console.info("Este es el numero "+numero+" hecho con el condicional for");
+
+
 WHILE
 
 Este bucle es muy parecido a if, la diferencia que 
@@ -11,8 +24,6 @@ lo que pasara es que se repetira el blouque de instrucciones
 las veces que sea necesaria hasta que la condicion sea 
 falsa y de esta manera salga de el bucle.
 
-*/
-
 let numeroWhile = 0;
 
 document.write(`<h1>Bucle While empieza desde: ${numeroWhile}</h1>`)
@@ -20,7 +31,7 @@ document.write(`<h1>Bucle While empieza desde: ${numeroWhile}</h1>`)
 while(numeroWhile < 10){
 	numeroWhile++;
 	document.write(`${numeroWhile} <hr>`);
-}
+}*/
 
 /*
 DO WHILE
